@@ -3,3 +3,17 @@
 :root {
     font-family: "Open Sans", sans-serif;
 }
+
+main {
+    display: none;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid black;
+    margin: 16px 0;
+}
+
+.current {
+    display: block;
+}

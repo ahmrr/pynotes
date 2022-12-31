@@ -12,25 +12,25 @@ while True:
     elif user_input == 'help' or user_input == 'h':
         print("""
         usage: [action] [modifier] [value] [value_2]
-        valid actions:
-         - add
-           ↳ semester
-           ↳ class
-         - delete
-           ↳ semester
-           ↳ class
-           ↳ all
-         - reset
-           ↳ semester
-           ↳ all
-         - scan
-         - list
-           ↳ semester
-           ↳ class
-           ↳ all
-           ↳ objects
-         - exit
-         - help
+        valid actions & modifiers:
+         - (a)dd: adds new module
+           ↳ (s)emester
+           ↳ (c)lass
+         - (d)elete: deletes existing module(s)
+           ↳ (s)emester
+           ↳ (c)lass
+           ↳ (a)ll
+         - (r)eset: resets content of existing module(s)
+           ↳ (s)emester
+           ↳ (a)ll
+         - (s)can: scans for new notes in existing module(s)
+         - (l)ist: lists existing module(s) and their contents
+           ↳ (s)emester
+           ↳ (c)lass
+           ↳ (a)ll
+           ↳ (o)bjects
+         - (e)xit / (q)uit: exits the CLI
+         - (h)elp: displays this message
          """)
     else:
         os.system('python3 gen.py ' + user_input)

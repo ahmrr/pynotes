@@ -33,8 +33,8 @@ print('')
 original_umask = os.umask(0o777)
 
 # open input PKL and output JSON files
-config_json_file = open('data/config.json.js', 'w')
-data_json_file = open('data/data.json.js', 'w')
+config_json_file = open('docs/config.json.js', 'w')
+data_json_file = open('docs/data.json.js', 'w')
 config_pkl_file_in = open('data/config.pkl', 'rb')
 data_pkl_file_in = open('data/data.pkl', 'rb')
 
