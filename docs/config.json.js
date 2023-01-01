@@ -1,1 +1,1 @@
-const config = {"root": "notes", "classes": {"Spring 2023": []}};
+const config = {"root": "notes", "classes": {"Spring 2023": [], "Fall 2022": ["CPSC 2310"]}};

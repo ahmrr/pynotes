@@ -190,6 +190,12 @@ try:
     elif action == 'scan' or action == 's':
         notes = glob.glob(config_obj['root'] + '/**/*.md', recursive=True)
         style = open('docs/index.css', 'r').read()
+
+        # remove existing notes and reset data object
+        for note in data_obj['files']:
+            os.remove(note)
+        data_obj['files'] = []
+
         for note in notes:
             content = open(note, 'r').read()
             html_content = f'<!DOCTYPE html><html><head><title>{note.split("/")[-1].split(".")[0]}</title><style>{style}</style></head><body>' + \

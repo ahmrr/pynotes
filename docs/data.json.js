@@ -1,1 +1,1 @@
-const data = {"files": []};
+const data = {"files": ["docs/Fall 2022/CPSC 2310/12-31-2022.html"]};
